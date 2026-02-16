@@ -22,7 +22,6 @@ function saveAvailability() {
     let availability =
         JSON.parse(localStorage.getItem("stylistAvailability")) || [];
 
-    // Remove old availability for this stylist
     availability = availability.filter(
         a => a.stylistEmail !== currentUser.email
     );
@@ -40,4 +39,5 @@ function saveAvailability() {
     );
 
     alert("Availability saved successfully!");
+
 }
