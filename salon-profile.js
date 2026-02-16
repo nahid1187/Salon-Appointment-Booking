@@ -36,7 +36,6 @@ function saveSalon() {
 
     let salons = JSON.parse(localStorage.getItem("salons")) || [];
 
-    // Check if salon already exists for this owner
     const existingSalon = salons.find(
         s => s.ownerEmail === currentUser.email
     );
@@ -56,4 +55,5 @@ function saveSalon() {
     localStorage.setItem("salons", JSON.stringify(salons));
 
     alert("Salon profile saved successfully!");
+
 }
