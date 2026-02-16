@@ -10,7 +10,6 @@ const searchInput = document.getElementById("searchInput");
 
 let salons = JSON.parse(localStorage.getItem("salons")) || [];
 
-// Display salons
 function displaySalons(list) {
     salonListDiv.innerHTML = "";
 
@@ -35,7 +34,6 @@ function displaySalons(list) {
     });
 }
 
-// Search salon by name
 function searchSalon() {
     const keyword = searchInput.value.toLowerCase();
 
@@ -46,5 +44,5 @@ function searchSalon() {
     displaySalons(filteredSalons);
 }
 
-// Initial load
+
 displaySalons(salons);
