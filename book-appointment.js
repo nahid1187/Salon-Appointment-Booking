@@ -9,7 +9,6 @@ const salons = JSON.parse(localStorage.getItem("salons")) || [];
 const salonSelect = document.getElementById("salonSelect");
 const serviceSelect = document.getElementById("serviceSelect");
 
-// Load salons
 function loadSalons() {
     salonSelect.innerHTML = "<option value=''>Select Salon</option>";
     salons.forEach((salon, index) => {
@@ -18,7 +17,6 @@ function loadSalons() {
     });
 }
 
-// Load services when salon selected
 function loadServices() {
     serviceSelect.innerHTML = "<option value=''>Select Service</option>";
     const salonIndex = salonSelect.value;
@@ -31,7 +29,6 @@ function loadServices() {
     });
 }
 
-// Book appointment
 function bookAppointment() {
     const salonIndex = salonSelect.value;
     const serviceName = serviceSelect.value;
@@ -58,5 +55,6 @@ function bookAppointment() {
 
     alert("Appointment booked successfully!");
 }
+
 
 loadSalons();
