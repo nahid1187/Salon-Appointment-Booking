@@ -1,0 +1,97 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#f4f6f8;
+}
+
+/* LAYOUT */
+.layout{
+display:flex;
+min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+width:220px;
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+padding:20px;
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar a, .sidebar li{
+display:block;
+padding:12px;
+margin:10px 0;
+color:white;
+text-decoration:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.sidebar a:hover, .sidebar li:hover{
+background:rgba(255,255,255,0.2);
+}
+
+.sidebar a.active{
+background:rgba(255,255,255,0.3);
+}
+
+/* CONTENT */
+.content{
+flex:1;
+padding:40px;
+}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+th, td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+th{
+background:#667eea;
+color:white;
+}
+
+/* STATUS COLORS */
+.pending{color:orange;font-weight:bold;}
+.accepted{color:green;font-weight:bold;}
+.rejected{color:red;font-weight:bold;}
+.completed{color:blue;font-weight:bold;}
+
+/* BUTTONS */
+button{
+padding:5px 8px;
+margin:2px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.accept{background:#2ecc71;color:white;}
+.reject{background:#e74c3c;color:white;}
+.done{background:#3498db;color:white;}

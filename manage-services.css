@@ -1,0 +1,120 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#f4f6f8;
+}
+
+/* LAYOUT */
+.layout{
+display:flex;
+min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+width:220px;
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+padding:20px;
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar a, .sidebar li{
+display:block;
+padding:12px;
+margin:10px 0;
+color:white;
+text-decoration:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.sidebar a:hover, .sidebar li:hover{
+background:rgba(255,255,255,0.2);
+}
+
+.sidebar a.active{
+background:rgba(255,255,255,0.3);
+}
+
+/* CONTENT */
+.content{
+flex:1;
+padding:40px;
+}
+
+/* CONTAINER */
+.service-container{
+max-width:600px;
+margin:auto;
+}
+
+/* FORM */
+.service-form{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+.service-form input{
+flex:1;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.service-form button{
+padding:10px 15px;
+background:#667eea;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.service-form button:hover{
+background:#5a67d8;
+}
+
+/* SERVICE LIST */
+.service-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+padding:15px;
+margin-bottom:10px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-info{
+font-size:16px;
+}
+
+/* DELETE BUTTON */
+.delete{
+background:#ff4d4d;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.delete:hover{
+background:#e60000;
+}

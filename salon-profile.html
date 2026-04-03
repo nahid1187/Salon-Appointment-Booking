@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Salon Profile</title>
+<link rel="stylesheet" href="salon-profile.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h2>💇 Salon</h2>
+
+<ul>
+<li><a href="salon.html">🏠 Dashboard</a></li>
+<li><a href="salon-profile.html" class="active">🏪 Profile</a></li>
+<li><a href="manage-services.html">💇 Services</a></li>
+<li><a href="manage-barbers.html">✂️ Barbers</a></li>
+<li><a href="salon-appointments.html">📅 Appointments</a></li>
+<li onclick="logout()">🚪 Logout</li>
+</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<div class="profile-container">
+
+<!-- PROFILE HEADER -->
+<div class="profile-header">
+<h2 id="displaySalonName">My Salon</h2>
+<p>Manage your salon information</p>
+</div>
+
+<!-- PROFILE FORM -->
+<div class="profile-card">
+
+<div class="form-group">
+<label>Salon Name</label>
+<input id="salonName" type="text" placeholder="Enter salon name">
+</div>
+
+<div class="form-group">
+<label>Location</label>
+<input id="location" type="text" placeholder="Enter location">
+</div>
+
+<button onclick="saveProfile()">Save Changes</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="salon-profile.js"></script>
+
+</body>
+</html>
